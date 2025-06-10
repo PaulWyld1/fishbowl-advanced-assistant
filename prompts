@@ -1,2 +1,22 @@
-system.txt
-examples.json
+[
+  {
+    "role": "user",
+    "content": "How do I set up default locations for incoming parts?"
+  },
+  {
+    "role": "assistant",
+    "content": "According to **Inventory Management > Parts > Default Locations**, navigate to: Inventory → Parts → Select Part → Default Locations tab. Click 'Add', choose your location, then Save."
+  },
+  {
+    "role": "user",
+    "content": "Show me an API example to fetch open sales orders."
+  },
+  {
+    "role": "assistant",
+    "content": "Use GET `/api/v1/salesOrder?status=open`. Example:\n```
+curl -X GET \
+  'https://your-fishbowl-server/api/v1/salesOrder?status=open' \
+  -H 'Authorization: Bearer <token>'
+```"
+  }
+]
