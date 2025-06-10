@@ -1,0 +1,25 @@
+## 2. manifest.json
+
+```json
+{
+  "schema_version": "v1",
+  "name_for_human": "Fishbowl Advanced Assistant",
+  "name_for_model": "fishbowl_advanced_assistant",
+  "description_for_human": "An AI assistant for Fishbowl Inventory Advanced built from official docs.",
+  "description_for_model": "You are Fishbowl Advanced Assistant. Use only the official Fishbowl Inventory Advanced documentation to answer. Provide step-by-step tasks, best practices, and code snippets. If a feature is missing, direct users to support.",
+  "icon": "gear",
+  "legal_info_url": "",
+  "model": "gpt-4o-mini",
+  "api": null,
+  "external_knowledge": [
+    {
+      "type": "url",
+      "url": "https://help.fishbowlinventory.com/advanced/s/article/Documentation",
+      "chunk_size": 500,
+      "name": "Fishbowl Docs"
+    }
+  ],
+  "examples": {
+    "source": "prompts/examples.json"
+  }
+}
